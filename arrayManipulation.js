@@ -19,3 +19,15 @@ const testArray = [2 3, 5, 7, 9];
 const result = processArray(testArray);
 console.log(result);
 
+function formatArrayStrings(stringArray, numberArray){
+for (let i = 0; i<stringArray.length, i++ ){
+    const currentString = stringArray[i];
+    const correspondingNum = numberArray[i]
+
+    if (correspondingNum % 2 === 0){
+        stringArray[i] = currentString.toUpperCase();
+    } else {
+        stringArray[i] = currentString.toLowerCase()
+    }
+    }
+}
